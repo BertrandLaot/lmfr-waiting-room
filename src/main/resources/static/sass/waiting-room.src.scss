@@ -1,0 +1,141 @@
+@import 'node_modules/integration-web-core--socle/css/assets/sass/_common/01-setting-tools/all-settings';
+
+body {
+    padding: 2rem 18px 
+}
+
+.digit1-verso, .digit2-verso, .digit1, .digit2 {
+    background: linear-gradient(-180deg, #78be20 0%, #41a017 49%,  #78be20 50%, #41a017 100%);
+    display: inline-block;
+    color: white;
+    font-size: 3.5rem;
+    padding: 0 8px;
+    vertical-align: middle;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-out;
+  }
+  
+.digit1-verso, .digit2-verso {
+    transform: rotateX(-180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.digit2-verso {
+    left: 50%;
+}
+.waiting-explaination {
+    color: $color-font-light;
+    margin: 1rem 0 1.5rem;
+
+    strong {
+        font-weight: bold;
+    }
+}
+.counter {
+    color: $color-font-light;
+    font-size: 1.43rem;
+    position: relative;
+}
+.js-counter {
+    position: relative;
+}
+.img-logo {
+    width: 84px;
+    margin-bottom:2.62rem;
+}
+
+.wrapper-reject .img-logo:not(.block-logo-temp) {
+    display: none;
+}
+
+.wrapper-reject {
+    text-align: center;  
+    
+    .mt-heading--s:after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.img-reject {
+    width: 100%;
+}
+
+@media screen and (min-width: $screen-m-medium) {
+    .wrapper {
+        width: 91%;
+        margin: 6.125rem auto;
+        text-align: center;
+    }
+
+    .wrapper-reject {
+
+        text-align: left;
+        flex-direction: column-reverse;
+
+        .block-logo-temp {
+            display: none;
+        }
+
+        .img-logo:not(.block-logo-temp) {
+            display: block;
+        }
+
+        .mt-heading--s:after {
+            margin-left: 0;
+        }
+
+        .img-reject {
+            width: 273px;
+            float: right;
+        }
+    }
+
+    .mt-heading--s:after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-reject {
+        display: block;
+        width: 80%;
+        margin-top: 8.25rem
+    }
+}
+
+@media screen and (min-width: $screen-xl) {
+    .wrapper {
+        width: 100%;
+        max-width: 1008px;
+        margin: 6.125rem auto;
+        text-align: left;
+    }
+
+    .wrapper-reject {
+        flex-direction: column-reverse;
+    }
+
+    .mt-heading--s:after {
+        margin-left: 0;
+    }
+
+    .block-explaination {
+        width: 70%;
+    }
+
+    .block-explaination, .counter {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .counter {
+        margin-top: 8.75rem;
+        margin-left: 5%;
+    }
+
+    .img-reject {
+        width: 384px;
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "lmfr-waiting-room",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-build": "watch-build",
+    "build": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BertrandLaot/lmfr-waiting-room.git"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "integration-web-core--socle": "git+ssh://git@github.com/adeo/integration-web-core--socle.git#v2.4.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BertrandLaot/lmfr-waiting-room/issues"
+  },
+  "homepage": "https://github.com/BertrandLaot/lmfr-waiting-room#readme"
+}
